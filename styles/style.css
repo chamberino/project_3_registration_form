@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font: .75rem/1.5 'Merriweather', serif, Helvetica, 'Century Gothic';
+  color: #2d3944;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+h2 {
+  font-weight: 300;
+  color: #7c7c7c;
+}
+
+/* h1, h2, h3, h4, p {
+  padding-left: .5em;
+  padding-right: .5em;
+
+} */
+
+.header {
+  text-align: center;
+}
+
+#title {
+  background-color: #2d3944;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#title h1 {
+  margin: 0;
+  padding: 1em;
+}
+
+form {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+#signup {
+  text-align: center;
+  border-bottom: 5px solid #2d3944;
+  padding: 1em .5em 2em;
+}
+
+#contact {
+  margin-top: .3em;
+  border-top: 2px solid #2d3944;
+}
