@@ -1,10 +1,10 @@
-* {
+*, *:before, *:after {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font: .75rem/1.5 'Merriweather', serif, Helvetica, 'Century Gothic';
+  font: .6rem/1.5 'Merriweather', serif, Helvetica, 'Century Gothic';
   color: #2d3944;
   background-color: #fff;
   min-height: 100vh;
@@ -13,41 +13,202 @@ body {
 h2 {
   font-weight: 300;
   color: #7c7c7c;
+  margin-top: 0;
+  font-size: 1.25em;
 }
 
-/* h1, h2, h3, h4, p {
-  padding-left: .5em;
-  padding-right: .5em;
-
-} */
-
-.header {
-  text-align: center;
-}
 
 #title {
   background-color: #2d3944;
   color: #fff;
   text-transform: uppercase;
+  text-align: center;
 }
 
 #title h1 {
   margin: 0;
   padding: 1em;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
 }
 
 form {
-  padding-left: 1.5em;
+  /* padding-left: 1.5em;
   padding-right: 1.5em;
+  padding: 10px 20px;
+*/
+  max-width: 400px;
+  margin: 10px auto;
+  margin-top: 0;
+  padding: 0 20px 10px;
+  background: #fff;
 }
 
-#signup {
+ #signup {
+ text-align: center;
+ border-bottom: 4px solid #2d3944;
+ padding: 1em .5em 2em;
+ position: relative;
+ margin-bottom: 4em;
+}
+
+#signup::before {
+ content: "";
+ position: absolute;
+ width: 100%;
+ border-bottom: 2px solid #2d3944;
+ top: -8px;
+ bottom: -9px;
+ left: 0px;
+ right: -8px;
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  display: block;
+  font-size: 1.25em;
+  padding-bottom: 8px;
+  color: #7c7c7c;
+}
+
+
+legend {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #ededed;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+input[type="number"] {
+  width: 50%;
+}
+
+input:focus {
+    border: 2px solid #2d3944;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+select {
+  height: 50px;
+}
+
+select:focus {
+    border: 2px solid #2d3944;
+}
+
+::-webkit-input-placeholder {
+  text-align: right;
+  font-style: italic;
+  font-weight: lighter;
+  color: #bfbdbd;
+  font-size: .75em;
+  padding-right: 1em;
+}
+
+#contact-info {
+  border-bottom: 2px solid #2d3944;
+  margin: 0;
+  padding: 0;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 8px 8px 0;
+  padding-top: 10px;
+  background-color: #fff;
+}
+
+#format,
+#other {
+  padding-top: 1em;
+}
+
+#other_topics {
+  height: 100px;
+  resize: none;
+}
+
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #53BBB4;
+  font-size: 18px;
   text-align: center;
-  border-bottom: 5px solid #2d3944;
-  padding: 1em .5em 2em;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #53BBB4;
+  /* box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset; */
+  margin-bottom: 10px;
 }
 
-#contact {
-  margin-top: .3em;
-  border-top: 2px solid #2d3944;
+footer {
+  color: #8a97a0;
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 4em;
 }
+
+
+@media screen and (min-width: 480px) {
+
+  #signup {
+    padding-top: 3em;
+  }
+
+  form {
+    max-width: 600px;
+  }
+
+  .flex-container{
+    padding-top: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .field-name {
+    flex-basis: 25%;
+    padding-bottom: 0;
+  }
+
+  .field {
+    flex-basis: 75%;
+  }
