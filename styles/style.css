@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font: .6rem/1.5 'Merriweather', serif, Helvetica, 'Century Gothic';
+  font: .7rem/1.5 'Merriweather', serif, Helvetica, 'Century Gothic';
   color: #2d3944;
   background-color: #fff;
   min-height: 100vh;
@@ -48,9 +48,9 @@ form {
  #signup {
  text-align: center;
  border-bottom: 4px solid #2d3944;
- padding: 1em .5em 2em;
+ padding: .75em .5em 1.5em;
  position: relative;
- margin-bottom: 4em;
+ margin-bottom: 3em;
 }
 
 #signup::before {
@@ -64,22 +64,27 @@ form {
  right: -8px;
 }
 
+#signup h1 {
+  margin-bottom: .25em;
+}
+
 fieldset {
   border: none;
 }
 
 label {
-  display: block;
   font-size: 1.25em;
-  padding-bottom: 8px;
+  padding-bottom: 12px;
   color: #7c7c7c;
+  font-weight: 300;
+  display: inline-block;
 }
 
 
 legend {
   font-size: 1.5em;
   font-weight: bold;
-  padding-bottom: 1em;
+  padding-bottom: .5em;
 }
 
 input[type="text"],
@@ -92,6 +97,7 @@ select {
   background: rgba(255,255,255,0.1);
   border: none;
   border-radius: 8px;
+  display: block;
   font-size: 16px;
   height: auto;
   margin: 0;
@@ -101,7 +107,8 @@ select {
   background-color: #ededed;
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-bottom: 30px;
+  /* margin-top: 18px; */
+  margin-bottom: 22px;
 }
 
 input[type="number"] {
@@ -135,27 +142,42 @@ select:focus {
   padding-right: 1em;
 }
 
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-left: 1em;
+}
+
 #contact-info {
   border-bottom: 2px solid #2d3944;
+  margin: 0 0 1.5em 0;
+  padding: 0;
+}
+
+.flex-container {
+  padding-bottom: 1em;
+}
+
+#newsletter-signup {
   margin: 0;
   padding: 0;
 }
 
-label.light {
-  font-weight: 300;
-  display: inline;
+#newsletter-signup legend {
+  padding-bottom: 1em;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 0 8px 8px 0;
+  margin: 0 15px 8px 0;
   padding-top: 10px;
   background-color: #fff;
 }
 
 #format,
 #other {
-  padding-top: 1em;
+  padding-top: .75em;
 }
 
 #other_topics {
@@ -190,6 +212,11 @@ footer {
 
   #signup {
     padding-top: 3em;
+    margin-bottom: 4em;
+  }
+
+  #contact-info {
+      margin-bottom: 2em;
   }
 
   form {
@@ -197,7 +224,7 @@ footer {
   }
 
   .flex-container{
-    padding-top: 2em;
+    padding-top: 0;
     display: flex;
     flex-flow: row wrap;
     align-items: baseline;
@@ -212,3 +239,5 @@ footer {
   .field {
     flex-basis: 75%;
   }
+
+}
