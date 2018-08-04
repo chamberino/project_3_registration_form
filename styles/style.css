@@ -46,7 +46,7 @@ form {
  border-bottom: 4px solid #2d3944;
  padding: .75em .5em 1.5em;
  position: relative;
- margin-bottom: 3em;
+ margin-bottom: 2em;
 }
 
 #signup::before {
@@ -80,7 +80,7 @@ label {
 legend {
   font-size: 1.5em;
   font-weight: bold;
-  padding-bottom: .5em;
+  padding-bottom: 1.3em;
 }
 
 input[type="text"],
@@ -211,15 +211,20 @@ input[type="checkbox"] {
 button {
   padding: 19px 39px 18px 39px;
   color: #FFF;
-  background-color: #53BBB4;
+  background-color: #83AF9B;
   font-size: 18px;
   text-align: center;
   font-style: normal;
   border-radius: 5px;
   width: 100%;
-  border: 1px solid #53BBB4;
-  /* box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset; */
+  border: 1px solid #6b9658;
   margin-bottom: 10px;
+  transition: background-color .25s ease-out;
+}
+
+button:hover {
+    background-color:#6b9658;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
 }
 
 footer {
@@ -241,7 +246,7 @@ footer {
 
   #signup {
     padding-top: 2em;
-    margin-bottom: 4em;
+    margin-bottom: 3.5em;
   }
 
   #contact-info {
