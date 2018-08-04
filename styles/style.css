@@ -6,7 +6,7 @@ body {
   margin: 0;
   font: .7rem/1.5 'Merriweather', serif, Helvetica, 'Century Gothic';
   color: #2d3944;
-  background-color: #fff;
+  background-color: #D3DDDC;
   min-height: 100vh;
 }
 
@@ -226,7 +226,7 @@ footer {
   color: #8a97a0;
   text-align: center;
   font-style: italic;
-  padding-top: 1em;
+  /* padding-top: 1em; */
   margin-top: 0;
   padding-bottom: 2.75em;
   background-color: #D3DDDC;
@@ -234,6 +234,10 @@ footer {
 
 
 @media screen and (min-width: 480px) {
+
+  body {
+    background-color: #fff;
+  }
 
   #signup {
     padding-top: 2em;
